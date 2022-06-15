@@ -1,0 +1,6 @@
+class LogRecord():
+    @staticmethod
+    def log_record(exception) -> None:
+        with open("log_error.txt", 'a') as file:
+            file.write(exception)
+        return None       
