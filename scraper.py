@@ -139,7 +139,7 @@ class Scraper():
         return None
 
 if __name__ == "__main__":
-    scraper = Scraper("pratikshavyas93@gmail.com","P@ssw0rd110894")
+    scraper = Scraper("pratikshavyas93@gmail.com","**********")
     scraper.load_page('https://www.linkedin.com')
     get_all_topbar_url_name = scraper.select_options_url()
     for url_name, url in get_all_topbar_url_name:
@@ -147,5 +147,3 @@ if __name__ == "__main__":
             scraper.load_page(url['url'])
             remotejobs, recomendedjob = scraper.get_remote_recomended_jobs()  
             
-        
-    
